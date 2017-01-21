@@ -229,6 +229,13 @@
 			remoteGlobalIDString = 27D4F42F1BED747600C15668;
 			remoteInfo = RNSimpleSound;
 		};
+		9E76EA401E32B92A0039324B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9E76EA3C1E32B92A0039324B /* RNSimpleSound.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 27D4F42F1BED747600C15668;
+			remoteInfo = RNSimpleSound;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -268,6 +275,7 @@
 		9E03C1EB1E328E3900E61A81 /* fSharp.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = fSharp.wav; sourceTree = "<group>"; };
 		9E03C1EC1E328E3900E61A81 /* g.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = g.wav; sourceTree = "<group>"; };
 		9E03C1ED1E328E3900E61A81 /* gSharp.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = gSharp.wav; sourceTree = "<group>"; };
+		9E76EA3C1E32B92A0039324B /* RNSimpleSound.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNSimpleSound.xcodeproj; path = "../node_modules/react-native-simple-sound/RNSimpleSound.xcodeproj"; sourceTree = "<group>"; };
 		CCCF270A390949E2B1D39F3A /* libRNSimpleSound.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNSimpleSound.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -429,6 +437,7 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				9E76EA3C1E32B92A0039324B /* RNSimpleSound.xcodeproj */,
 				9E03C1E11E328E3900E61A81 /* audio */,
 				5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */,
 				146833FF1AC3E56700842450 /* React.xcodeproj */,
@@ -508,6 +517,14 @@
 			isa = PBXGroup;
 			children = (
 				9E76EA3B1E32B51E0039324B /* libRNSimpleSound.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9E76EA3D1E32B92A0039324B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9E76EA411E32B92A0039324B /* libRNSimpleSound.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -625,6 +642,10 @@
 				{
 					ProductGroup = 9E76EA1E1E32B51D0039324B /* Products */;
 					ProjectRef = 696D8D62661F489CABC1D8F8 /* RNSimpleSound.xcodeproj */;
+				},
+				{
+					ProductGroup = 9E76EA3D1E32B92A0039324B /* Products */;
+					ProjectRef = 9E76EA3C1E32B92A0039324B /* RNSimpleSound.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -816,6 +837,13 @@
 			fileType = archive.ar;
 			path = libRNSimpleSound.a;
 			remoteRef = 9E76EA3A1E32B51E0039324B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9E76EA411E32B92A0039324B /* libRNSimpleSound.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNSimpleSound.a;
+			remoteRef = 9E76EA401E32B92A0039324B /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */

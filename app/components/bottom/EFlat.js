@@ -9,6 +9,8 @@ import {
   TouchableOpacity,
 } from 'react-native';
 
+import {getEFlatAudio} from './audiofunctions/getEFlatAudio'
+
 const styles = StyleSheet.create({
   eflatkey: {
     backgroundColor: 'black',
@@ -24,7 +26,7 @@ const styles = StyleSheet.create({
 function EFlatKey(props){
   return(
 
-    <TouchableOpacity onPress={()=>props()}>
+    <TouchableOpacity onPress={()=>getEFlatAudio()}>
       <Image
         style={styles.eflatkey}
       />

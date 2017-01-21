@@ -9,6 +9,8 @@ import {
   TouchableOpacity,
 } from 'react-native';
 
+import {getBAudio} from './audiofunctions/getBAudio'
+
 const styles = StyleSheet.create({
   bkey: {
     backgroundColor: '#ECECEC',
@@ -23,7 +25,7 @@ const styles = StyleSheet.create({
 function BKey(props){
   return(
 
-    <TouchableOpacity onPress={()=>props()}>
+    <TouchableOpacity onPress={()=>getBAudio()}>
       <Image
         style={styles.bkey}
       />

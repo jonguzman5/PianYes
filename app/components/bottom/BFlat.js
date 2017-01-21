@@ -9,6 +9,8 @@ import {
   TouchableOpacity,
 } from 'react-native';
 
+import {getBFlatAudio} from './audiofunctions/getBFlatAudio'
+
 const styles = StyleSheet.create({
   bflatkey: {
     backgroundColor: 'black',
@@ -24,7 +26,7 @@ const styles = StyleSheet.create({
 function BFlatKey(props){
   return(
 
-    <TouchableOpacity onPress={()=>props()}>
+    <TouchableOpacity onPress={()=>getBFlatAudio()}>
       <Image
         style={styles.bflatkey}
       />

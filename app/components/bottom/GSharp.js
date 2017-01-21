@@ -9,6 +9,8 @@ import {
   TouchableOpacity,
 } from 'react-native';
 
+import {getGSharpAudio} from './audiofunctions/getGSharpAudio'
+
 const styles = StyleSheet.create({
   gsharpkey: {
     backgroundColor: 'black',
@@ -24,7 +26,7 @@ const styles = StyleSheet.create({
 function GSharpKey(props){
   return(
 
-    <TouchableOpacity onPress={()=>props()}>
+    <TouchableOpacity onPress={()=>getGSharpAudio()}>
       <Image
         style={styles.gsharpkey}
       />

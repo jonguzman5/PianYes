@@ -9,7 +9,7 @@ import {
   TouchableOpacity,
 } from 'react-native';
 
-import {getDAudio} from './getDAudio'
+import {getDAudio} from './audiofunctions/getDAudio'
 
 const styles = StyleSheet.create({
   dkey: {

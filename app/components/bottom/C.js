@@ -10,8 +10,8 @@ import {
   AlertIOS,
 } from 'react-native';
 
-import {getCAudio} from './getCAudio'
-import cAudio from '../../audio/c.wav'
+import {getCAudio} from './audiofunctions/getCAudio'
+import {getDImage} from './imagefunctions/getDImage'
 
 const styles = StyleSheet.create({
   ckey: {
@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
 
 function CKey(props){
   return(
-    <TouchableOpacity onPress={props.cAudio}>
+    <TouchableOpacity onPress={()=>{getCAudio();getDImage();}}>
       <Image
         style={styles.ckey}
       />

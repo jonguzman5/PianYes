@@ -12,7 +12,7 @@ class TopContainer extends Component{
     return(
       <View style={styles.topContainer}>
         {this.props.children}
-        {/*<SheetMusic/>*/}
+        <SheetMusic/>
       </View>
       )
   }

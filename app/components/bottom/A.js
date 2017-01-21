@@ -9,6 +9,8 @@ import {
   TouchableOpacity,
 } from 'react-native';
 
+import {getAAudio} from './audiofunctions/getAAudio'
+
 const styles = StyleSheet.create({
   akey: {
     backgroundColor: 'white',
@@ -23,7 +25,7 @@ const styles = StyleSheet.create({
 function AKey(props){
   return(
 
-    <TouchableOpacity onPress={()=>props()}>
+    <TouchableOpacity onPress={()=>getAAudio()}>
       <Image
         style={styles.akey}
       />

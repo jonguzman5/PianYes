@@ -9,6 +9,8 @@ import {
   TouchableOpacity,
 } from 'react-native';
 
+import {getFSharpAudio} from './audiofunctions/getFSharpAudio'
+
 const styles = StyleSheet.create({
   fsharpkey: {
     backgroundColor: 'black',
@@ -24,7 +26,7 @@ const styles = StyleSheet.create({
 function FSharpKey(props){
   return(
 
-    <TouchableOpacity onPress={()=>props()}>
+    <TouchableOpacity onPress={()=>getFSharpAudio()}>
       <Image
         style={styles.fsharpkey}
       />
