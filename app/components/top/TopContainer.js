@@ -6,13 +6,16 @@ import {
 } from 'react-native';
 
 import SheetMusic from './SheetMusic';
+import StatusBar from './StatusBar';
 
 class TopContainer extends Component{
   render(){
+        console.log(this.props)
+
     return(
       <View style={styles.topContainer}>
-        {this.props.children}
-        <SheetMusic/>
+        <StatusBar/>
+        <SheetMusic image={this.props.changeNote} />
       </View>
       )
   }
@@ -23,7 +26,7 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
     justifyContent: 'flex-start',
     alignItems: 'stretch',
-    backgroundColor: 'lightgray'
+    backgroundColor: 'black'
   }
 })
 

@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import {
   StyleSheet,
   Text,
-  View
+  View,
+  TouchableOpacity
 } from 'react-native';
 
 import C from './C';
@@ -17,12 +18,13 @@ import EFlat from './EFlat';
 import FSharp from './FSharp';
 import GSharp from './GSharp';
 import BFlat from './BFlat';
+import {changeNote} from '../../../index.ios.js'
 
 class BottomContainer extends Component{
   render(){
     return(
       <View style={styles.bottomContainer}>
-        <C/>
+        <C changeNote={this.props.changeNote}/>
         <D/>
         <E/>
         <F/>

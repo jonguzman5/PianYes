@@ -17,7 +17,7 @@ class StatusBar extends Component{
 const styles = StyleSheet.create({
   statusBar: {
     height: 20,
-    backgroundColor: '#3D263D',
+    backgroundColor: '#580b1c',
   },
   header: {
     fontWeight: 'bold',

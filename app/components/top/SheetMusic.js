@@ -6,26 +6,34 @@ import {
   Image,
 } from 'react-native';
 
-class SheetMusic extends Component{
-  constructor(){
-    super();
-    this.state = {
-      img: ''
-    }
-  }
-  render(){
-    return(
-      <Image style={styles.sheetMusic}
-      source={{uri: 'http://localhost:3000/cImage'}}
-       />
-      )
-  }
+import getImage from '../bottom/imagefunctions/getImage';
+
+function SheetMusic(props){
+    const imageUrl = `${props.image.image}`
+
+  return(
+    <Image style={styles.sheetMusic}
+    source={ require('../../../app/images/C.png')}
+    />
+    )
 }
+// class SheetMusic extends Component{
+//   render(){
+//     return(
+//       <Image style={styles.sheetMusic}
+//       //make source state based
+//         source={this.props.ChangeNote}
+//        />
+//       )
+//   }
+// }
 const styles = StyleSheet.create({
   sheetMusic: {
-    height: 230,
+    height: 250,
+    width: 300,
     alignItems: 'center',
-    marginTop: 20,
+    marginTop: 15,
+    marginLeft: 40,
     backgroundColor: 'white',
   }
 })

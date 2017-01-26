@@ -11,7 +11,7 @@ import {
 } from 'react-native';
 
 import {getCAudio} from './audiofunctions/getCAudio'
-import {getDImage} from './imagefunctions/getDImage'
+import {getImage} from './imagefunctions/getImage'
 
 const styles = StyleSheet.create({
   ckey: {
@@ -23,13 +23,22 @@ const styles = StyleSheet.create({
   }
 });
 
+function inizio(props){
+  return(
+  ()=>props.changeNote,
+  getCAudio
+  )
+}
+
 function CKey(props){
   return(
-    <TouchableOpacity onPress={()=>{getCAudio();getDImage();}}>
+    <View>
+    <TouchableOpacity onPress={inizio()}>
       <Image
         style={styles.ckey}
       />
-    </TouchableOpacity>
+      </TouchableOpacity>
+      </View>
     )
 }
 
