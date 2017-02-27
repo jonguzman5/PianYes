@@ -79,7 +79,7 @@ changeNote(symbol){
     return (
       <View>
 { /*passing down props that has state from this component */}
-      <TopContainer changeNote={this.state}>
+      <TopContainer changeNote={this.state.image}>
       </TopContainer>
 {/* passing down a prop taht is a funciton and will update state of this component */}
       <BottomContainer changeNote={this.changeNote}>
