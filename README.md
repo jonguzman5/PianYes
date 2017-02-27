@@ -1,4 +1,4 @@
-# ![alt-tag]('./app/images/PianYesGiphy.gif') 
+<!-- # ![alt-tag]('./app/images/PianYesGiphy.gif')  -->
 # PianYes
 
 ### User Stories
